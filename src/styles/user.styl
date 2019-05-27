@@ -1,0 +1,79 @@
+// Put your custom styles here!
+
+// New to Stylus? Check out http://learnboost.github.io/stylus
+// You can use modern CSS thanks to Autoprefixer: https://github.com/ai/autoprefixer
+@require "./prism-duotone-space.css";
+
+a {
+  color: orange;
+}
+
+a:visited {
+  color: orangered;
+}
+
+iframe {
+  border: 0px;
+}
+
+
+
+.chromaBars {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  right: 0px;
+  height: 100px;
+}
+section.big-chromabars .chromaBars {
+  height: 300px;
+}
+.chromaBars.notMuted .chromaBar {
+  background-color: #555 !important;
+}
+
+.chromaBars > div:first-child {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+  bottom: 0px;
+
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  opacity: 0.2;
+}
+
+section.big-chromabars .chromaBars > div:first-child {
+  justify-content: center;
+  overflow: visible;
+  opacity: 1.0;
+}
+section.big-chromabars .chromaBars .chromaBar {
+  min-height: 1em;
+  font-size: 1em;
+  width: 30px;
+}
+
+.chromaBar {
+  background-color: #333;
+  color: black;
+  min-height: 1em;
+  font-size: 0.3em;
+  font-weight: bold;
+  width: 15px;
+}
+
+.with-shadow-text {
+    text-shadow:
+    3px 3px 0 #000,
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+}
