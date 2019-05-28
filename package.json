@@ -33,7 +33,8 @@
     "node": ">=4.2.0"
   },
   "scripts": {
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "build": "gulp build"
   },
   "dependencies": {
     "bespoke-progress": "^1.0.0",
