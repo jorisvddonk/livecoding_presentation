@@ -6,6 +6,8 @@ self.firstSampleArrivedAt = null;
 self.addEventListener("message", function(ev) {
   if (!ev.data.hasOwnProperty("audioData")) {
     console.log("expected audioData");
+
+    return;
   }
   chromagram.processAudioFrame(ev.data.audioData);
 
