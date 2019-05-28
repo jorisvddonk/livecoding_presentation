@@ -1,6 +1,13 @@
 const webworkify = require("webworkify");
 const chromagramWorker = new webworkify(require("./worker.js"));
 
+document.addEventListener("keydown", evt => {
+  if (evt.keyCode === 81) {
+    // Q
+    document.querySelector("body").classList.toggle("showRockslidesChromaBars");
+  }
+});
+
 const THRESHOLD = 28;
 const LOWER_THRESHOLD = 5;
 const audioCtx = new AudioContext();
